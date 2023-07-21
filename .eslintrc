@@ -1,0 +1,4 @@
+{
+	"ignorePatterns": ["node_modules/", "assets/"],
+    "extends": [ "plugin:@wordpress/eslint-plugin/recommended" ]
+}

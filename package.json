@@ -1,0 +1,52 @@
+{
+  "name": "fse-theme",
+  "version": "0.1.0",
+  "description": "A starter theme for the Full Site Editing experience.",
+  "author": "James Amner <jdamner@me.com>",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "fse"
+  ],
+  "homepage": "https://github.com/jdamner/fse-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdamner/fse-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jdamner/fse-theme/issues"
+  },
+  "devDependencies": {
+    "@wordpress/block-editor": "^12.6.0",
+    "@wordpress/blocks": "^12.15.0",
+    "@wordpress/env": "^8.4.0",
+    "@wordpress/eslint-plugin": "^14.11.0",
+    "@wordpress/i18n": "^4.38.0",
+    "@wordpress/icons": "^9.29.0",
+    "@wordpress/scripts": "^26.9.0",
+    "css-loader": "^6.8.1",
+    "react": "^18.2.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4"
+  },
+  "scripts": {
+    "wp-env": "wp-env",
+    "composer": "wp-env run cli --env-cwd=wp-content/themes/fse-theme composer",
+    "wp-cli": "wp-env run cli --env-cwd=wp-content/themes/fse-theme wp",
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:php": "npm run composer run phpcs",
+    "lint:php:fix": "npm run composer run phpcbf",
+    "lint:css": "wp-scripts lint-style './blocks/**/*.scss'",
+    "lint:css:fix": "wp-scripts lint-style --fix './blocks/**/*.scss'",
+    "lint:js": "wp-scripts lint-js",
+    "lint:js:fix": "wp-scripts lint-js --fix",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start"
+  }
+}

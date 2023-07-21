@@ -1,0 +1,6 @@
+{
+	"themes": [ "./" ],
+	"mappings": {
+		"wp-content/themes/fse-theme": "./"
+	}
+}
