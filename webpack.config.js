@@ -10,11 +10,15 @@ const path = require( 'path' );
 module.exports = {
 	...defaultConfig,
 	entry: {
-		scripts: path.resolve( process.cwd(), 'blocks', 'index.ts' ),
+		blocks: path.resolve( process.cwd(), 'blocks', 'blocks.ts' ),
+		frontend: path.resolve( process.cwd(), 'blocks', 'frontend.ts' ),
 	},
 	output: {
 		path: path.resolve( process.cwd(), 'assets' ),
-		filename: 'index.js',
+	},
+	externals: {
+		react: 'React',
+		'react-dom': 'ReactDOM',
 	},
 	module: {
 		...defaultConfig.module,

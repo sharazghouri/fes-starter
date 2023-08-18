@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "./build/",
+		"outDir": "./assets/",
 		"jsx": "react-jsx",
 		"module": "ESNext",
 		"target": "ES2015", // Set to ES5 for older browser support.

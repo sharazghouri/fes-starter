@@ -56,6 +56,11 @@ of block can't be altered unless the post is edited. This is the highest perform
 block type since it saves static HTML at the time the post is saved and doesn't require
 any PHP rendering when outputting on the front end. 
 
+### React Block
+A react block is a block that loads a react-component on the front-end, allowing you to
+add dynamic functionality on the front end. This should be used where you need to add
+interactivity to a block, such as a slider or accordion.
+
 ## Creating a new block
 
 To create a new block, a folder should be created in the `blocks` directory. Within each
