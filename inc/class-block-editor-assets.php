@@ -30,13 +30,20 @@ class Block_Editor_Assets {
 	 * @return void
 	 */
 	public function enqueue_block_editor_assets(): void {
-		$asset_data = include get_stylesheet_directory() . '/assets/index.asset.php';
+		$asset_data = include get_stylesheet_directory() . '/assets/blocks.asset.php';
 		wp_enqueue_script(
 			'block-registration',
-			get_stylesheet_directory_uri() . '/assets/index.js',
+			get_stylesheet_directory_uri() . '/assets/blocks.js',
 			$asset_data['dependencies'],
 			$asset_data['version'],
 			true
+		);
+
+		wp_enqueue_style(
+			'fse-theme-style',
+			get_stylesheet_directory_uri() . '/assets/blocks.css',
+			[],
+			$asset_data['version']
 		);
 	}
 
@@ -46,11 +53,19 @@ class Block_Editor_Assets {
 	 * @return void
 	 */
 	public function enqueue_frontend_assets(): void {
+		$asset_data = include get_stylesheet_directory() . '/assets/frontend.asset.php';
 		wp_enqueue_style(
 			'fse-theme-style',
-			get_stylesheet_directory_uri() . '/assets/scripts.css',
-			array(),
-			wp_get_theme()->get( 'Version' )
+			get_stylesheet_directory_uri() . '/assets/frontend.css',
+			[],
+			$asset_data['version'],
+		);
+		wp_enqueue_script(
+			'fse-theme-script',
+			get_stylesheet_directory_uri() . '/assets/frontend.js',
+			$asset_data['dependencies'],
+			$asset_data['version'],
+			true
 		);
 	}
 }
