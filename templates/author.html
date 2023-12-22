@@ -2,9 +2,13 @@
 
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
 <main class="wp-block-group">
-	<!-- wp:heading {"level":1,"align":"wide","className":"wp-block-post-title"} -->
-	<h1 class="wp-block-post-title alignwide">Blog</h1>
-	<!-- /wp:heading -->
+	<!-- wp:group {"align":"wide"} -->
+	<div class="wp-block-group alignwide">
+		<!-- wp:post-author {"showAvatar":true,"avatarSize":200,"showBio":true} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:term-description /-->
 
 	<!-- wp:template-part {"slug":"query"} /-->
 </main>
