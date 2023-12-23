@@ -67,5 +67,9 @@ class Block_Editor_Assets {
 			$asset_data['version'],
 			true
 		);
+// 		<link rel="preconnect" href="https://fonts.googleapis.com">
+// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		wp_enqueue_style( 'add_google_fonts ', 'https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@300;400;500&family=Tenor+Sans&display=swap', false );
+		#FFB503
 	}
 }
