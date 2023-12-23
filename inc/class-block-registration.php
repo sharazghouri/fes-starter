@@ -7,7 +7,7 @@
 
 declare ( strict_types = 1 );
 
-namespace FSE;
+namespace Solution_Box;
 
 use Solution_Box\Blocks\Dynamic_SSR;
 
