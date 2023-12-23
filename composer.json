@@ -1,12 +1,12 @@
 {
-	"name": "example/fse",
+	"name": "solution_box/fse",
 	"description": "Full Site Editing Example",
 	"type": "template",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "James Amner",
-			"homepage": "https://amner.me"
+			"name": "Sharaz",
+			"homepage": "https://github.com/sharazghouri"
 		}
 	],
 	"require-dev": {

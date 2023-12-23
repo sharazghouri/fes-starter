@@ -3,7 +3,7 @@
  * Automatically locates and loads files based on their namespaces and their
  * file names whenever they are instantiated.
  *
- * @package FSE
+ * @package Solution_Box
  */
 
 spl_autoload_register(

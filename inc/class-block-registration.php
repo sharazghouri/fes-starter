@@ -2,14 +2,14 @@
 /**
  * Block Registration Manager
  *
- * @package FSE Theme
+ * @package SolutionBoxTheme
  */
 
 declare ( strict_types = 1 );
 
 namespace FSE;
 
-use FSE\Blocks\Dynamic_SSR;
+use Solution_Box\Blocks\Dynamic_SSR;
 
 /**
  * Block Registration Manager

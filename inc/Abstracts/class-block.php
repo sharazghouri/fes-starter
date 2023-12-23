@@ -2,12 +2,12 @@
 /**
  * Abstract Block Registration Class
  *
- * @package FSE Theme
+ * @package SolutionBoxTheme
  */
 
 declare ( strict_types = 1 );
 
-namespace FSE\Abstracts;
+namespace Solution_Box\Abstracts;
 
 /**
  * Abstract Block Registration Class

@@ -2,14 +2,14 @@
 /**
  * Block Handler for SSR
  *
- * @package FSE Theme
+ * @package SolutionBoxTheme
  */
 
 declare ( strict_types = 1 );
 
-namespace FSE\Blocks;
+namespace Solution_Box\Blocks;
 
-use FSE\Abstracts\Block;
+use Solution_Box\Abstracts\Block;
 
 /**
  * Block Handler for SSR

@@ -2,7 +2,7 @@
 /**
  * Block Handler for SSR
  *
- * @package FSE Theme
+ * @package SolutionBoxTheme
  */
 
 declare ( strict_types = 1 );

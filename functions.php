@@ -2,14 +2,14 @@
 /**
  * Functions.php
  *
- * @package FSE Theme
+ * @packageSolutionBoxTheme
  */
 
 declare ( strict_types = 1 );
 
-use FSE\Block_Editor_Assets;
-use FSE\Block_Registration;
-use FSE\Block_Misc;
+use Solution_Box\Block_Editor_Assets;
+use Solution_Box\Block_Registration;
+use Solution_Box\Block_Misc;
 
 require_once get_template_directory() . '/vendor/autoload.php';
 require_once get_template_directory() . '/inc/autoload.php';

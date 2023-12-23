@@ -2,12 +2,12 @@
 /**
  * Block Editor Assets Manager
  *
- * @package FSE Theme
+ * @package SolutionBoxTheme
  */
 
 declare ( strict_types = 1 );
 
-namespace FSE;
+namespace Solution_Box;
 
 /**
  * Block Editor Assets Manager
@@ -40,7 +40,7 @@ class Block_Editor_Assets {
 		);
 
 		wp_enqueue_style(
-			'fse-theme-style',
+			'sb-theme-style',
 			get_stylesheet_directory_uri() . '/assets/blocks.css',
 			[],
 			$asset_data['version']
@@ -55,13 +55,13 @@ class Block_Editor_Assets {
 	public function enqueue_frontend_assets(): void {
 		$asset_data = include get_stylesheet_directory() . '/assets/frontend.asset.php';
 		wp_enqueue_style(
-			'fse-theme-style',
+			'sb-theme-style',
 			get_stylesheet_directory_uri() . '/assets/frontend.css',
 			[],
 			$asset_data['version'],
 		);
 		wp_enqueue_script(
-			'fse-theme-script',
+			'sb-theme-script',
 			get_stylesheet_directory_uri() . '/assets/frontend.js',
 			$asset_data['dependencies'],
 			$asset_data['version'],

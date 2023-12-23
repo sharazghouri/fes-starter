@@ -2,12 +2,12 @@
 /**
  * Block Registration Manager
  *
- * @package FSE Theme
+ * @package SolutionBoxTheme
  */
 
 declare ( strict_types = 1 );
 
-namespace FSE;
+namespace Solution_Box;
 
 
 /**
